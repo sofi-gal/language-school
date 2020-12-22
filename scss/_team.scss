@@ -1,0 +1,101 @@
+/* Teammates */
+.main__section__team__title {
+  text-align: center;
+  margin-top: 2rem; }
+
+.main__section__team__article {
+  height: 100%;
+  width: 100%;
+  margin: auto; }
+
+.main__section__team__article__card__deck {
+  width: 100%;
+  margin: auto;
+  height: 100%; }
+
+.main__section__team__article__teammate__card__deck__card {
+  margin: auto;
+  line-height: 2;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
+.main__section__team__article__teammate__image__source {
+  height: auto;
+  width: 40%;
+  padding: 1rem 2rem;
+  margin: auto; }
+
+.main__section__team__article__teammate__card__deck__card__info {
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto; }
+
+.main__section__teammate__card__deck__Card__info__networks__link {
+  font-size: 45px;
+  color: #7996e7; }
+
+.main__section__teammate__card__deck__Card__info__networks__link
+.fa-facebook-square:hover {
+  color: #3b5998; }
+
+.main__section__teammate__card__deck__Card__info__networks__link
+.fa-twitter-square:hover {
+  color: #00acee; }
+
+.main__section__teammate__card__deck__Card__info__networks__link
+.fa-instagram-square:hover {
+  background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+.main__section__teammate__card__deck__Card__info__networks__link
+.fa-linkedin:hover {
+  color: #00a0dc; }
+
+.main__section__teammate__card__deck__Card__info__networks__title {
+  text-align: center; }
+
+/* Our Work */
+.main__section__work {
+  height: 100%; }
+
+.main__section__work__title {
+  text-align: center; }
+
+.main__section__team__article {
+  height: 100%;
+  width: 100%; }
+
+.main__section__work__article__card__deck__card {
+  margin: auto;
+  line-height: 2;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  padding: 1rem 2rem;
+  border: none; }
+
+.main__section__work__article__card__deck {
+  margin: auto;
+  width: 90%; }
+
+.main__section__work__article__card__deck__card__info__image {
+  height: auto;
+  width: 90%;
+  padding: 1rem 2rem;
+  margin: auto; }
+
+.main__section__work__article__work__card__deck__card__info {
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto; }

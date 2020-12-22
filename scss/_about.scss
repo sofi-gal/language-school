@@ -1,0 +1,56 @@
+/* About Us */
+.main__section__aboutUs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0rem 2rem; }
+  
+  .main__aboutUs__article {
+    width: 100%; }
+  
+  .main__section__aboutUs__title {
+    padding: 3rem 0rem;
+    font-size: 2.5rem; }
+  
+  .main__section__aboutUs__info {
+    line-height: 2; }
+  
+  .main__aboutUs__article__frequentQuestions {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 0rem; }
+  
+  .main__aboutUs__article__border {
+    width: 20%;
+    height: 10px;
+    border-bottom: solid #01b0a4;
+    padding: 0.5rem 0rem;
+    border-width: 0.2rem;
+    animation-name: width;
+    animation-duration: 0.6s; }
+  
+  .main__aboutUs__article__accordion {
+    width: 50%;
+    cursor: pointer;
+    margin-top: 1rem;
+    border: 1px solid #01b0a4;
+    border-radius: 0.3rem; }
+  
+  .main__aboutUs__article__accordion__card__body {
+    width: 100%;
+    display: block; }
+  
+  .main__aboutUs__article__accordion__card__btn {
+    color: black;
+    font-weight: bold; }
+  
+  .main__aboutUs__article__accordion__card__btn:hover {
+    text-decoration: none;
+    background-color: none;
+    color: #01b0a4; }
+  
+  .main__aboutUs__article__image {
+    width: 40%; }
