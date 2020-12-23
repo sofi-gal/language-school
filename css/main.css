@@ -425,9 +425,9 @@ main .main__section3 {
         .main__section__team__article .main__section__team__article__teammate__card__deck .main__section__team__article__teammate__card__deck__card .main__section__team__article__teammate__card__deck__card__info .main__section__team__article__teammate__card__deck__card__info__networks__link {
           font-size: 45px;
           color: #7996e7; }
-          .main__section__team__article .main__section__team__article__teammate__card__deck .main__section__team__article__teammate__card__deck__card .main__section__team__article__teammate__card__deck__card__info .main__section__team__article__teammate__card__deck__card__info__networks__link .main__section__team__article__teammate__card__deck__card__info__networks__link
+        .main__section__team__article .main__section__team__article__teammate__card__deck .main__section__team__article__teammate__card__deck__card .main__section__team__article__teammate__card__deck__card__info .main__section__team__article__teammate__card__deck__card__info__networks__link
 .fa-facebook-square:hover {
-            color: #3b5998; }
+          color: #3b5998; }
         .main__section__team__article .main__section__team__article__teammate__card__deck .main__section__team__article__teammate__card__deck__card .main__section__team__article__teammate__card__deck__card__info .main__section__team__article__teammate__card__deck__card__info__networks__link
 .fa-twitter-square:hover {
           color: #00acee; }
