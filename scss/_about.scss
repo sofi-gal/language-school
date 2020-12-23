@@ -4,10 +4,10 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    padding: 0rem 2rem; }
+    padding: 0rem 2rem; 
   
   .main__aboutUs__article {
-    width: 100%; }
+    width: 100%; 
   
   .main__section__aboutUs__title {
     padding: 3rem 0rem;
@@ -45,12 +45,15 @@
   
   .main__aboutUs__article__accordion__card__btn {
     color: black;
-    font-weight: bold; }
+    font-weight: bold; 
   
-  .main__aboutUs__article__accordion__card__btn:hover {
+  &:hover {
     text-decoration: none;
     background-color: none;
     color: #01b0a4; }
+  }
   
   .main__aboutUs__article__image {
     width: 40%; }
+  }
+  }
