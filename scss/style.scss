@@ -8,6 +8,13 @@
 @import "services";
 @import "team";
 
+/* Mixins */
+@mixin flex($justify, $align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
 
 * {
   margin: 0;
@@ -42,37 +49,35 @@ h2 {
 header {
   width: 100%;
   background-color: #e9e7ea;
-}
 
-header .header__navbar {
+
+.header__navbar {
   width: 100%;
 }
 
-header .header__navbar__brand__logo {
+.header__navbar__brand__logo {
   color: rgb(209, 142, 79);
   font-size: 40px;
   animation: world 3s infinite linear;
   margin-left: 1rem;
 }
 
-header .header__navbar__collapse {
+.header__navbar__collapse {
   width: 100%;
   text-align: center;
   padding: 1rem 0rem;
 }
 
-header .header__navbar__collapse__menu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.header__navbar__collapse__menu {
+  @include flex($justify: center, $align: center);
 }
 
-header .header__navbar__collapse__menu__item {
+.header__navbar__collapse__menu__item {
   padding: 0rem 1rem;
   line-height: 2;
 }
 
-header .header__navbar__collapse__menu__link {
+.header__navbar__collapse__menu__link {
   font-weight: light;
   padding: 0.5rem 2rem;
   color: black !important;
@@ -81,7 +86,7 @@ header .header__navbar__collapse__menu__link {
   margin-top: 0.5rem;
 }
 
-header .header__navbar__collapse__menu__link--active {
+.header__navbar__collapse__menu__link--active {
   font-weight: bold;
   background-color: rgb(209, 142, 79);
   color: white !important;
@@ -90,13 +95,13 @@ header .header__navbar__collapse__menu__link--active {
   border-radius: 0.7rem;
 }
 
-header .header__navbar__collapse__menu__link:hover {
+.header__navbar__collapse__menu__link:hover {
   background-color: rgb(209, 142, 79);
   color: white !important;
   transition: 0.2s all;
   border-radius: 0.7rem;
 }
-
+}
 /* Hero */
 .hero {
   background-image: url("../img/background.jpg");
@@ -106,11 +111,9 @@ header .header__navbar__collapse__menu__link:hover {
   background-position: center;
   width: 100%;
   min-height: 90vh;
-  display: flex;
+  @include flex($justify: center, $align: center);
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+
 
 .hero__subtitle {
   font-weight: lighter;
@@ -118,32 +121,28 @@ header .header__navbar__collapse__menu__link:hover {
   padding: 1rem 0rem;
   text-align: center;
 }
-
+}
 /* Footer */
 footer {
   width: 100%;
   height: 20%;
-  display: flex;
+  @include flex($justify: space-around, $align: center);
   background-color: rgb(121, 150, 231);
-  justify-content: space-around;
-  align-items: center;
   color: white;
   flex-wrap: wrap;
   padding: 1rem 0rem;
-}
 
-footer .footer__networks {
+
+.footer__networks {
   height: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  @include flex($justify: space-around, $align: center);
   flex-wrap: wrap;
 }
 
-footer .footer__networks__network {
+.footer__networks__network {
   margin: 1rem;
 }
-
+}
 /* Keyframes */
 @keyframes world {
   0% {
@@ -171,9 +170,7 @@ footer .footer__networks__network {
     width: 100%;
     height: 100%;
     margin: auto;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    @include flex($justify: space-around, $align: center);
     margin-bottom: 2rem;
   }
 
@@ -183,21 +180,17 @@ footer .footer__networks__network {
   }
   /* Plans */
   .main__section__plan__card__deck {
-    display: flex;
+    @include flex($justify: space-around, $align: center);
     flex-direction: column !important;
     width: 90%;
-    justify-content: space-around;
-    align-items: center;
     margin: auto;
   }
 
   /* Teammates */
   .main__section__team__article__teammate__card__deck__card {
     width: 100%;
-    display: flex;
+    @include flex($justify: space-around, $align: center);
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
     margin-top: 1rem;
     margin-bottom: 2rem;
   }
@@ -211,7 +204,7 @@ footer .footer__networks__network {
   }
   /* Frequent Questions */
   .main__aboutUs__article__accordion {
-    width: 90%;
+    width: 100%;
   }
 
   .main__aboutUs__article__image {
