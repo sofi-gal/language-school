@@ -1,54 +1,67 @@
+/* Mixins */
+@mixin flex($justify, $align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
 /* Servicios */
 .main__section__services__title {
-    padding: 2rem 0rem;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-  
-  .main__section__services__card__deck {
-    width: 100%;
-    margin: auto; }
-  
+  padding: 2rem 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main__section__services__card__deck {
+  width: 100%;
+  margin: auto;
+
   .main__section__services__card__deck__card {
     border: none;
-    padding: 2rem 0rem; }
-  
+    padding: 2rem 0rem;
+  }
+
   .main__section__services__card__deck__card__info {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    @include flex($justify: space-around, $align: center);
     flex-wrap: wrap;
     text-align: center;
     padding: 2rem 0rem;
-    margin-bottom: 2rem; }
-  
+    margin-bottom: 2rem;
+  }
+
   .main__section__services__card__deck__card__info__title {
-    padding: 2rem 0rem; }
-  
+    padding: 2rem 0rem;
+  }
+
   .main__section__services__card__deck__card__info--background-change {
     background-color: #9c69b4;
-    color: white; }
-  
+    color: white;
+  }
+
   .main__section__services__card__deck__card__card__info__image {
     width: 30%;
-    filter: drop-shadow(0px 5px 5px #464545); }
-  
-  /* Planes */
-  .main__section__plans__title {
-    padding: 2rem 0rem;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-  
-  .main__section__plans__card__deck {
-    width: 100%;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    flex-direction: row; }
-  
+    filter: drop-shadow(0px 5px 5px #464545);
+  }
+}
+/* Planes */
+.main__section__plans__title {
+  padding: 2rem 0rem;
+  @include flex($justify: space-around, $align: center);
+}
+.main__section__plans__card__deck__plan__subtitle {
+  font-size: 1rem;
+  color: #2eb391;
+  padding-bottom: 1rem;
+}
+
+.main__section__plans__card__deck {
+  width: 100%;
+  text-align: center;
+  @include flex($justify: center, $align: center);
+  margin: auto;
+  flex-direction: row;
+
   .main__section__plans__card__deck__plan__card {
     text-align: center;
     height: auto;
@@ -56,47 +69,46 @@
     width: 25%;
     margin-right: 1rem;
     border-radius: 1rem;
-    box-shadow: 0px 0px 10px #e7e4e4; }
-  
+    box-shadow: 0px 0px 10px #e7e4e4;
+  }
+
   .main__section__plan__card__deck__card__info {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    @include flex($justify: space-around, $align: center);
     text-align: center;
-    padding: 2rem 1rem; }
-  
+    padding: 2rem 1rem;
+  }
+
   .main__section__plan__card__deck__card__info__title {
     color: #343235;
     font-size: 1.5rem;
-    padding: 1rem 0rem; }
-  
-  .main__section__plans__group__plan__prosCons {
-    list-style: none;
-    line-height: 2;
-    text-align: left;
-    list-style: none;
-    display: list-item;
-    margin: auto; }
-  
+    padding: 1rem 0rem;
+  }
+}
+.main__section__plans__group__plan__prosCons {
+  list-style: none;
+  line-height: 2;
+  text-align: left;
+  list-style: none;
+  display: list-item;
+  margin: auto;
+
   .main__section__plans__group__plan__prosCons__item {
-    list-style: circle; }
-  
+    list-style: circle;
+  }
+
   .main__section__plans__group__plan__prosCons__item__group {
     width: 100%;
     display: flex;
-    flex-direction: column; }
-  
-  .main__section__plans__card__deck__plan__subtitle {
-    font-size: 1rem;
-    color: #2eb391;
-    padding-bottom: 1rem; }
-  
+    flex-direction: column;
+  }
+
   .main__section__plans__group__plan__prosCons__item__price {
     padding-top: 3rem;
     padding-bottom: 1rem;
     font-weight: bold;
-    text-align: center; }
-  
+    text-align: center;
+  }
+
   .main__section__plans__group__prosCons__item__button {
     background-color: #5b7bd3;
     padding: 0.6rem 2rem;
@@ -105,9 +117,12 @@
     cursor: pointer;
     border: none;
     color: white;
-    box-shadow: 0px 0px 9px 0px #b9b7b7; }
-  
-  .main__section__plans__group__prosCons__item__button:hover {
-    background-color: #344f99;
-    transform: scale(1.1);
-    transition: all 0.1s ease-in-out; }
+    box-shadow: 0px 0px 9px 0px #b9b7b7;
+
+    &:hover {
+      background-color: #344f99;
+      transform: scale(1.1);
+      transition: all 0.1s ease-in-out;
+    }
+  }
+}
