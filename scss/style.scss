@@ -200,7 +200,7 @@ footer {
   }
   /* Contact */
   .main__section__contact__form {
-    width: 90%;
+    width: 100%;
   }
   /* Frequent Questions */
   .main__aboutUs__article__accordion {
@@ -228,6 +228,14 @@ footer {
   }
 
   .main__section__team__article__teammate__image__source {
-    width: 90%;
+    width: 500px;
+  }
+  /* Contact */
+  .main__section__contact__form {
+    width: 100%;
+  }
+  /* Frequent Questions */
+  .main__aboutUs__article__accordion {
+    width: 100%;
   }
 }
