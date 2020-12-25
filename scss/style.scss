@@ -49,6 +49,7 @@ h2 {
 header {
   width: 100%;
   background-color: #e9e7ea;
+  @include flex($justify: space-around, $align: center);
 
 
 .header__navbar {
