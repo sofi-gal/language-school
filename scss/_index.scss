@@ -36,7 +36,10 @@
 }
 
 /* Variables */
-$boxShadow: 0px 0px 10px 0px rgba(182, 178, 178, 0.39);
+$boxShadow: -4px -4px 10px rgba(255,255,255,1),
+    inset 4px 4px 10px rgba(0,0,0,0.06),
+    inset -4px -4px 10px rgba(255,255,255,1),
+     4px 4px 10px rgba(0,0,0,0.06);
 
 /* Main */
 /* Section 1 */
