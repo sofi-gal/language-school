@@ -154,7 +154,7 @@ footer {
 }
 
 /* Media Queries */
-@media screen and (max-width: 830px) {
+@media (max-width: 830px) {
   /* Contact */
   .main__section3__align__items {
     width: 100%;
@@ -221,7 +221,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media (max-width: 500px) {
   /* Teammates */
   .main__section__team__article__teammate__card__deck__card {
     flex-wrap: wrap;
