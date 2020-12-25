@@ -55,23 +55,21 @@ main .main__section1 {
     width: 100%;
     @include flex($justify: space-around, $align: center);
     .main__section1__card__deck__card__info {
-      @include flex($justify: space-around, $align: center);
+      @include flex($justify: center, $align: center);
       flex-direction: column;
       border-radius: 1rem;
       padding: 1rem 1rem;
       border: none;
       box-shadow: 0px 0px 5px 0px #c7c7c7;
       height: 50vh;
+      text-align: center;
     }
-    .main__section1__card__deck__card__info {
-    @include flex($justify: center, $align: center);
-  }
     .main__section1__card__deck__card__info__title {
       font-size: 1.3rem;
       text-align: center;
       padding: 0.5rem 0rem;
     }
-}
+
   }
   .main__section1__seeMore {
     @include seeMore();
