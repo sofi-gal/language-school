@@ -122,3 +122,34 @@
     }
   }
 }
+
+/* Media Queries */
+@media (max-width: 830px) {
+  .main__section__team__article__teammate__card__deck__card__image__source
+  {
+    width: 90% !important; 
+  }
+
+  .main__section__work__article__card__deck__card {
+    flex-wrap: wrap !important;
+  }
+}
+
+@media (max-width: 500px) {
+  /* Teammates */
+  .main__section__team__article__teammate__card__deck__card {
+    flex-wrap: wrap;
+  }
+
+  .main__section__team__article__teammate__image__source {
+    width: 100% !important;
+  }
+  /* Contact */
+  .main__section__contact__form {
+    width: 100%;
+  }
+  /* Frequent Questions */
+  .main__aboutUs__article__accordion {
+    width: 100%;
+  }
+}

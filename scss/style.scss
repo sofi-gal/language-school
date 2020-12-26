@@ -15,6 +15,9 @@
   align-items: $align;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
 * {
   margin: 0;
@@ -156,61 +159,7 @@ footer {
 
 /* Media Queries */
 @media (max-width: 830px) {
-  /* Contact */
-  .main__section3__align__items {
-    width: 100%;
-    margin: auto;
-    flex-wrap: wrap;
-  }
 
-  .main__section3__form {
-    width: 90% !important;
-  }
-
-  .main__Section3__location {
-    width: 100%;
-    height: 100%;
-    margin: auto;
-    @include flex($justify: space-around, $align: center);
-    margin-bottom: 2rem;
-  }
-
-  iframe {
-    width: 90%;
-    margin: auto;
-  }
-  /* Plans */
-  .main__section__plan__card__deck {
-    @include flex($justify: space-around, $align: center);
-    flex-direction: column !important;
-    width: 90%;
-    margin: auto;
-  }
-
-  /* Teammates */
-  .main__section__team__article__teammate__card__deck__card {
-    width: 100%;
-    @include flex($justify: space-around, $align: center);
-    flex-direction: column;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-  }
-
-  .main__section__team__article__teammate__image__source {
-    width: 100%;
-  }
-  /* Contact */
-  .main__section__contact__form {
-    width: 100%;
-  }
-  /* Frequent Questions */
-  .main__aboutUs__article__accordion {
-    width: 100%;
-  }
-
-  .main__aboutUs__article__image {
-    display: none;
-  }
 
   /* Footer */
   footer {
@@ -222,21 +171,4 @@ footer {
   }
 }
 
-@media (max-width: 500px) {
-  /* Teammates */
-  .main__section__team__article__teammate__card__deck__card {
-    flex-wrap: wrap;
-  }
 
-  .main__section__team__article__teammate__image__source {
-    width: 500px;
-  }
-  /* Contact */
-  .main__section__contact__form {
-    width: 100%;
-  }
-  /* Frequent Questions */
-  .main__aboutUs__article__accordion {
-    width: 100%;
-  }
-}

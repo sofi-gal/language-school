@@ -22,14 +22,15 @@ main .main__section1 {
     align-items: center; }
     main .main__section1 .main__section1__card__deck .main__section1__card__deck__card__info {
       display: flex;
-      justify-content: space-around;
+      justify-content: center;
       align-items: center;
       flex-direction: column;
       border-radius: 1rem;
       padding: 1rem 1rem;
       border: none;
-      box-shadow: 0px 0px 5px 0px #c7c7c7;
-      height: 50vh; }
+      box-shadow: -4px -4px 10px white, inset 4px 4px 10px rgba(0, 0, 0, 0.06), inset -4px -4px 10px white, 4px 4px 10px rgba(0, 0, 0, 0.06);
+      height: 40vh;
+      text-align: center; }
     main .main__section1 .main__section1__card__deck .main__section1__card__deck__card__info__title {
       font-size: 1.3rem;
       text-align: center;
@@ -77,12 +78,12 @@ main .main__section2 {
       border: none;
       margin-bottom: 10rem !important; }
     main .main__section2 .main__section2__teammates__card__deck .main__section2__teammates__card__deck__card__info {
-      box-shadow: 0px 0px 10px 0px rgba(182, 178, 178, 0.39);
       border-radius: 1rem;
       padding: 2rem 1rem;
       background-color: #fffefe;
       position: absolute;
-      top: 75% !important; }
+      top: 75% !important;
+      box-shadow: -4px -4px 10px white, inset 4px 4px 10px rgba(0, 0, 0, 0.06), inset -4px -4px 10px white, 4px 4px 10px rgba(0, 0, 0, 0.06); }
       main .main__section2 .main__section2__teammates__card__deck .main__section2__teammates__card__deck__card__info .main__section2__teammates__card__deck__card__info__title {
         font-size: 1.3rem;
         text-align: center;
@@ -103,10 +104,11 @@ main .main__section2 {
       height: 150px;
       border-radius: 99px;
       z-index: 1;
-      box-shadow: 0px 0px 10px 0px rgba(182, 178, 178, 0.39);
+      box-shadow: -4px -4px 10px white, inset 4px 4px 10px rgba(0, 0, 0, 0.06), inset -4px -4px 10px white, 4px 4px 10px rgba(0, 0, 0, 0.06);
       display: flex;
       justify-content: space-around;
-      align-items: center; }
+      align-items: center;
+      border: 2px inset #9097d4; }
     main .main__section2 .main__section2__teammates__card__deck .main__section2__teammates__card__deck__card__image__person2 {
       background-image: url("../img/person2.jpg");
       background-size: cover;
@@ -115,10 +117,11 @@ main .main__section2 {
       height: 150px;
       border-radius: 99px;
       z-index: 1;
-      box-shadow: 0px 0px 10px 0px rgba(182, 178, 178, 0.39);
+      box-shadow: -4px -4px 10px white, inset 4px 4px 10px rgba(0, 0, 0, 0.06), inset -4px -4px 10px white, 4px 4px 10px rgba(0, 0, 0, 0.06);
       display: flex;
       justify-content: space-around;
-      align-items: center; }
+      align-items: center;
+      border: 2px inset #9097d4; }
     main .main__section2 .main__section2__teammates__card__deck .main__section2__teammates__card__deck__card__image__person3 {
       background-image: url("../img/person3.jpg");
       background-size: cover;
@@ -127,10 +130,11 @@ main .main__section2 {
       height: 150px;
       border-radius: 99px;
       z-index: 1;
-      box-shadow: 0px 0px 10px 0px rgba(182, 178, 178, 0.39);
+      box-shadow: -4px -4px 10px white, inset 4px 4px 10px rgba(0, 0, 0, 0.06), inset -4px -4px 10px white, 4px 4px 10px rgba(0, 0, 0, 0.06);
       display: flex;
       justify-content: space-around;
-      align-items: center; }
+      align-items: center;
+      border: 2px inset #9097d4; }
   main .main__section2 .main__section2__seeMore {
     width: 100%;
     text-align: center;
@@ -150,16 +154,20 @@ main .main__section2 {
 main .main__section3 {
   width: 100%;
   height: 100%;
-  margin-top: 4rem; }
+  margin-top: 4rem;
+  background: #7996e7;
+  padding: 1rem 0rem; }
   main .main__section3 .main__section3__title {
     height: 10vh;
     display: flex;
     justify-content: flex-start;
-    align-items: center; }
+    align-items: center;
+    color: white;
+    padding-left: 0.5rem; }
   main .main__section3 .main__section3__line {
     height: 10px;
     width: 40%;
-    background-color: #7996e7;
+    background-color: #ffffff;
     margin-bottom: 2rem; }
   main .main__section3 .main__section3__align__items {
     display: flex;
@@ -172,7 +180,8 @@ main .main__section3 {
       justify-content: space-around;
       align-items: flex-start;
       flex-direction: column;
-      line-height: 3; }
+      line-height: 3;
+      color: white; }
       main .main__section3 .main__section3__align__items .main__section3__form .main__Section3__form__textarea {
         height: 200px;
         width: 100%;
@@ -184,13 +193,34 @@ main .main__section3 {
       background-color: #5b7bd3;
       padding: 0rem 2rem;
       margin-top: 1rem;
-      border: none;
+      border: 1px white solid;
       color: white;
       box-shadow: 0px 0px 9px 0px #b9b7b7; }
       main .main__section3 .main__section3__align__items .main__Section3__form__submit:hover {
         background-color: #7996e7;
         text-decoration: none;
         box-shadow: 0px 0px 10px 0px #969494; }
+
+/* Media Queries */
+@media (max-width: 830px) {
+  /* Contact */
+  .main__section3__align__items {
+    width: 100%;
+    margin: auto;
+    flex-wrap: wrap; }
+  .main__section3__form {
+    width: 90% !important; }
+  .main__Section3__location {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 2rem; }
+  iframe {
+    width: 90%;
+    margin: auto; } }
 
 /* About Us */
 .main__section__aboutUs {
@@ -238,6 +268,13 @@ main .main__section3 {
         color: #01b0a4; }
     .main__section__aboutUs .main__aboutUs__article .main__aboutUs__article__image {
       width: 40%; }
+
+@media (max-width: 830px) {
+  /* Frequent Questions */
+  .main__aboutUs__article__accordion {
+    width: 100% !important; }
+  .main__aboutUs__article__image {
+    display: none; } }
 
 /* Mixins */
 /* Contact */
@@ -301,7 +338,8 @@ main .main__section3 {
   margin: auto; }
   .main__section__services__card__deck .main__section__services__card__deck__card {
     border: none;
-    padding: 2rem 0rem; }
+    padding: 2rem 0rem;
+    margin-bottom: 2rem !important; }
   .main__section__services__card__deck .main__section__services__card__deck__card__info {
     display: flex;
     justify-content: space-around;
@@ -312,12 +350,8 @@ main .main__section3 {
     margin-bottom: 2rem; }
   .main__section__services__card__deck .main__section__services__card__deck__card__info__title {
     padding: 2rem 0rem; }
-  .main__section__services__card__deck .main__section__services__card__deck__card__info--background-change {
-    background-color: #9c69b4;
-    color: white; }
   .main__section__services__card__deck .main__section__services__card__deck__card__card__info__image {
-    width: 30%;
-    filter: drop-shadow(0px 5px 5px #464545); }
+    width: 30%; }
 
 /* Planes */
 .main__section__plans__title {
@@ -344,7 +378,7 @@ main .main__section3 {
     height: auto;
     padding: 1rem 2rem;
     width: 25%;
-    margin-right: 1rem;
+    margin: auto;
     border-radius: 1rem;
     box-shadow: 0px 0px 10px #e7e4e4; }
   .main__section__plans__card__deck .main__section__plan__card__deck__card__info {
@@ -389,6 +423,16 @@ main .main__section3 {
       background-color: #344f99;
       transform: scale(1.1);
       transition: all 0.1s ease-in-out; }
+
+@media (max-width: 830px) {
+  /* Plans */
+  .main__section__plan__card__deck {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column !important;
+    width: 90%;
+    margin: auto; } }
 
 /* Mixins */
 /* Teammates */
@@ -477,7 +521,30 @@ main .main__section3 {
       align-items: center;
       margin: auto; }
 
+/* Media Queries */
+@media (max-width: 830px) {
+  .main__section__team__article__teammate__card__deck__card__image__source {
+    width: 90% !important; }
+  .main__section__work__article__card__deck__card {
+    flex-wrap: wrap !important; } }
+
+@media (max-width: 500px) {
+  /* Teammates */
+  .main__section__team__article__teammate__card__deck__card {
+    flex-wrap: wrap; }
+  .main__section__team__article__teammate__image__source {
+    width: 100% !important; }
+  /* Contact */
+  .main__section__contact__form {
+    width: 100%; }
+  /* Frequent Questions */
+  .main__aboutUs__article__accordion {
+    width: 100%; } }
+
 /* Mixins */
+html {
+  scroll-behavior: smooth; }
+
 * {
   margin: 0;
   padding: 0;
@@ -505,7 +572,10 @@ h2 {
 /* Header */
 header {
   width: 100%;
-  background-color: #e9e7ea; }
+  background-color: #e9e7ea;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
   header .header__navbar {
     width: 100%; }
   header .header__navbar__brand__logo {
@@ -591,61 +661,9 @@ footer {
     transform: rotate(360deg); } }
 
 /* Media Queries */
-@media screen and (max-width: 830px) {
-  /* Contact */
-  .main__section3__align__items {
-    width: 100%;
-    margin: auto;
-    flex-wrap: wrap; }
-  .main__section3__form {
-    width: 90% !important; }
-  .main__Section3__location {
-    width: 100%;
-    height: 100%;
-    margin: auto;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-bottom: 2rem; }
-  iframe {
-    width: 90%;
-    margin: auto; }
-  /* Plans */
-  .main__section__plan__card__deck {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column !important;
-    width: 90%;
-    margin: auto; }
-  /* Teammates */
-  .main__section__team__article__teammate__card__deck__card {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 1rem;
-    margin-bottom: 2rem; }
-  .main__section__team__article__teammate__image__source {
-    width: 100%; }
-  /* Contact */
-  .main__section__contact__form {
-    width: 90%; }
-  /* Frequent Questions */
-  .main__aboutUs__article__accordion {
-    width: 100%; }
-  .main__aboutUs__article__image {
-    display: none; }
+@media (max-width: 830px) {
   /* Footer */
   footer {
     flex-direction: column; }
   footer .footer__networks {
     flex-direction: row; } }
-
-@media screen and (max-width: 500px) {
-  /* Teammates */
-  .main__section__team__article__teammate__card__deck__card {
-    flex-wrap: wrap; }
-  .main__section__team__article__teammate__image__source {
-    width: 90%; } }

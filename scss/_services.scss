@@ -5,6 +5,7 @@
   align-items: $align;
 }
 
+
 /* Servicios */
 .main__section__services__title {
   padding: 2rem 0rem;
@@ -20,6 +21,7 @@
   .main__section__services__card__deck__card {
     border: none;
     padding: 2rem 0rem;
+    margin-bottom: 2rem !important;
   }
 
   .main__section__services__card__deck__card__info {
@@ -34,14 +36,8 @@
     padding: 2rem 0rem;
   }
 
-  .main__section__services__card__deck__card__info--background-change {
-    background-color: #9c69b4;
-    color: white;
-  }
-
   .main__section__services__card__deck__card__card__info__image {
     width: 30%;
-    filter: drop-shadow(0px 5px 5px #464545);
   }
 }
 /* Planes */
@@ -67,7 +63,7 @@
     height: auto;
     padding: 1rem 2rem;
     width: 25%;
-    margin-right: 1rem;
+    margin: auto;
     border-radius: 1rem;
     box-shadow: 0px 0px 10px #e7e4e4;
   }
@@ -124,5 +120,16 @@
       transform: scale(1.1);
       transition: all 0.1s ease-in-out;
     }
+  }
+}
+
+@media (max-width: 830px) {
+
+  /* Plans */
+  .main__section__plan__card__deck {
+    @include flex($justify: space-around, $align: center);
+    flex-direction: column !important;
+    width: 90%;
+    margin: auto;
   }
 }
