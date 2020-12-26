@@ -324,6 +324,12 @@ main .main__section3 {
     background-color: #7996e7;
     text-decoration: none;
     box-shadow: 0px 0px 10px 0px #969494; }
+    /* Media Queries */
+@media (max-width: 830px) {
+  .main__section__contact__form {
+      width: 100% !important;
+  }
+}
 
 /* Mixins */
 /* Servicios */
